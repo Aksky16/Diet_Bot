@@ -1,0 +1,154 @@
+[import](common.lg)
+
+# SendActivity_Greeting()
+[Activity
+    Text = ${SendActivity_Greeting_text()}
+    SuggestedActions = Diet Plan | BMI Calculator | Ideal Weight Calculator | Bot Instructions
+]
+
+# SendActivity_Greeting_text()
+- Hi. I am Diet Bot. I suggest diet plans that are flexible and easy to implement in your busy life. I can also calculate your BMI and your ideal weight. How can I help you today?
+# SendActivity_9yKEJA()
+[Activity
+    Text = ${SendActivity_9yKEJA_text()}
+]
+
+# SendActivity_9yKEJA_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_dgMjhN_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_dgMjhN()
+[Activity
+    Text = ${SendActivity_dgMjhN_text()}
+]
+
+# SendActivity_CancelConfirmation_text()
+- OK, no problem.
+- Sure. I'll cancel.
+- OK, I will stop.
+- Got it, I'll stop here.
+- No problem, I will stop.
+
+# SendActivity_sfY40W_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_sfY40W()
+[Activity
+    Text = ${SendActivity_sfY40W_text()}
+]
+
+# SendActivity_HsfjHJ_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_HsfjHJ()
+[Activity
+    Text = ${SendActivity_HsfjHJ_text()}
+]
+
+# SendActivity_OuPpA4_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_OuPpA4()
+[Activity
+    Text = ${SendActivity_OuPpA4_text()}
+]
+
+# SendActivity_ut6t7Q_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_ut6t7Q()
+[Activity
+    Text = ${SendActivity_ut6t7Q_text()}
+]
+
+# SendActivity_1AUoKB_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_1AUoKB()
+[Activity
+    Text = ${SendActivity_1AUoKB_text()}
+]
+
+# SendActivity_s1rm69_text()
+- You have closed the conversation. Please restart the Bot to start a new conversation.
+# SendActivity_s1rm69()
+[Activity
+    Text = ${SendActivity_s1rm69_text()}
+]
+
+# ChoiceInput_Prompt_pMLtRX_text()
+- Are you sure you want to cancel?
+# ChoiceInput_Prompt_pMLtRX()
+[Activity
+    Text = ${ChoiceInput_Prompt_pMLtRX_text()}
+]
+
+# SendActivity_rLNfqN()
+[Activity
+    Text = ${SendActivity_CancelConfirmation_text()}
+]
+
+# SendActivity_NRH3YK_text()
+- (You can now close the bot)
+# SendActivity_NRH3YK()
+[Activity
+    Text = ${SendActivity_NRH3YK_text()}
+]
+
+# SendActivity_DidNotUnderstand_text()
+- Sorry, I didn't get that.
+# SendActivity_HI7B2Z()
+[Activity
+    Text = ${SendActivity_DidNotUnderstand_text()}
+]
+
+# ChoiceInput_Prompt_boFBEa()
+[Activity
+    Text = ${ChoiceInput_Prompt_boFBEa_text()}
+]
+
+# ChoiceInput_Prompt_boFBEa_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_8UifTZ_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_8UifTZ()
+[Activity
+    Text = ${ChoiceInput_Prompt_8UifTZ_text()}
+]
+
+# ChoiceInput_Prompt_ZDCtRF_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_ZDCtRF()
+[Activity
+    Text = ${ChoiceInput_Prompt_ZDCtRF_text()}
+]
+
+# ChoiceInput_Prompt_VZ0oO2_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_VZ0oO2()
+[Activity
+    Text = ${ChoiceInput_Prompt_VZ0oO2_text()}
+]
+
+# ChoiceInput_Prompt_aTvfy5_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_aTvfy5()
+[Activity
+    Text = ${ChoiceInput_Prompt_aTvfy5_text()}
+]
+
+# ChoiceInput_Prompt_MjZpZZ_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_MjZpZZ()
+[Activity
+    Text = ${ChoiceInput_Prompt_MjZpZZ_text()}
+]
+
+# ChoiceInput_Prompt_QnqZAu_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_QnqZAu()
+[Activity
+    Text = ${ChoiceInput_Prompt_QnqZAu_text()}
+]
+
+# ChoiceInput_Prompt_8VW990_text()
+- Do you want to restart conversation?
+# ChoiceInput_Prompt_8VW990()
+[Activity
+    Text = ${ChoiceInput_Prompt_8VW990_text()}
+]

@@ -1,0 +1,881 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "name": "Diet_Bot",
+    "description": "",
+    "id": "A79tBe"
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnConversationUpdateActivity",
+      "$designer": {
+        "id": "376720",
+        "comment": "This trigger runs when a conversation update activity is sent to the bot. This indicates a user or bot being added or removed from a conversation."
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.Foreach",
+          "$designer": {
+            "id": "518944",
+            "name": "Loop: for each item",
+            "comment": "For each member added to the conversation."
+          },
+          "itemsProperty": "turn.Activity.membersAdded",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "641773",
+                "name": "Branch: if/else",
+                "comment": "Checks that that member added ID does not match the bot ID. This prevents the greeting message from being sent when the bot is added to a conversation."
+              },
+              "condition": "=string(dialog.foreach.value.id) != string(turn.Activity.Recipient.id)",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "859266",
+                    "name": "Send a response"
+                  },
+                  "activity": "${SendActivity_Greeting()}"
+                }
+              ]
+            }
+          ],
+          "value": "dialog.foreach.value"
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnUnknownIntent",
+      "$designer": {
+        "id": "mb2n1u",
+        "comment": "This trigger fires when an incoming activity is not handled by any other trigger."
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "U2tq17"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "9yKEJA"
+              },
+              "activity": "${SendActivity_9yKEJA()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "8VW990"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_8VW990()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "5W7a48"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "UOIu6j"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "gCyJkX"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "r18yjR"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "HI7B2Z",
+                "comment": "It is recommended to show a message to the user when the bot does not know how to handle an incoming activity and provide follow up options or a help message."
+              },
+              "activity": "${SendActivity_HI7B2Z()}"
+            }
+          ]
+        }
+      ],
+      "condition": true
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "TdvsUy",
+        "name": "DietPlan"
+      },
+      "intent": "DietPlan",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "JVOHyv"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "dgMjhN"
+              },
+              "activity": "${SendActivity_dgMjhN()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "boFBEa"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_boFBEa()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "OdzyvA"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "VV80mi"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "8SVJ46"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "WuZRlg"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "NcUSNx"
+              },
+              "activityProcessed": true,
+              "dialog": "Diet_Plan"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "qHx0Za",
+        "name": "BMI"
+      },
+      "intent": "BMI",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "8dJVEU"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "sfY40W"
+              },
+              "activity": "${SendActivity_sfY40W()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "8UifTZ"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_8UifTZ()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "9NqFKf"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "HoKtCZ"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "Vm0ylu"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "0w2TnX"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "0kVw42"
+              },
+              "activityProcessed": true,
+              "dialog": "BMI"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "XHn7Uv",
+        "name": "Ideal_Weight"
+      },
+      "intent": "Ideal_Weight",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "Esab6d"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "HsfjHJ"
+              },
+              "activity": "${SendActivity_HsfjHJ()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "ZDCtRF"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_ZDCtRF()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "cpabo7"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "zFL1xW"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "5b22I8"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "5KVvhJ"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "HyYtMF"
+              },
+              "activityProcessed": true,
+              "dialog": "IdealWeight"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "H5cBa6",
+        "name": "Bot_Instructions"
+      },
+      "intent": "Bot_Instructions",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "1W08Gf"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "OuPpA4"
+              },
+              "activity": "${SendActivity_OuPpA4()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "VZ0oO2"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_VZ0oO2()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "oqigPm"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "izOuh3"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "TpQIbx"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "QJvS3h"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "vI6LHs"
+              },
+              "activityProcessed": true,
+              "dialog": "BotUsage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "7UrWdb",
+        "name": "Help"
+      },
+      "intent": "Help",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "5juyk0"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "ut6t7Q"
+              },
+              "activity": "${SendActivity_ut6t7Q()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "aTvfy5"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_aTvfy5()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "b7Rd6V"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "aa1OB3"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "0QsuaK"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "uRKvei"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "IZI9At"
+              },
+              "activityProcessed": true,
+              "dialog": "Help"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "kQcHXg",
+        "name": "AlternateProteins"
+      },
+      "intent": "AlternateProteins",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "Uh3oBF"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "1AUoKB"
+              },
+              "activity": "${SendActivity_1AUoKB()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "MjZpZZ"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_MjZpZZ()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "2woq0P"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "V25C6r"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "FQm7HO"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "es1vFT"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "9B1h49"
+              },
+              "activityProcessed": true,
+              "dialog": "AlternateProtein"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "$kind": "Microsoft.OnIntent",
+      "$designer": {
+        "id": "88Shdz",
+        "name": "Cancel"
+      },
+      "intent": "Cancel",
+      "actions": [
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "0oemsS"
+          },
+          "condition": "=user.cancel == 'Yes'",
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "s1rm69"
+              },
+              "activity": "${SendActivity_s1rm69()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "QnqZAu"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_QnqZAu()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true
+              },
+              "property": "dialog.decision",
+              "outputFormat": "=this.value",
+              "value": "=dialog.decision",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "o0oMxE"
+              },
+              "condition": "=dialog.decision == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "SFdX1C"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "HMx989"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.RepeatDialog",
+                  "$designer": {
+                    "id": "rZ7UTh"
+                  },
+                  "activityProcessed": true
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "pMLtRX"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "prompt": "${ChoiceInput_Prompt_pMLtRX()}",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or "
+              },
+              "property": "user.cancel",
+              "outputFormat": "=this.value",
+              "value": "=user.cancel",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "sOUcjK"
+              },
+              "condition": "=user.cancel == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "rLNfqN"
+                  },
+                  "activity": "${SendActivity_rLNfqN()}"
+                },
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "NRH3YK"
+                  },
+                  "activity": "${SendActivity_NRH3YK()}"
+                },
+                {
+                  "$kind": "Microsoft.CancelAllDialogs",
+                  "$designer": {
+                    "id": "8nNeDo"
+                  },
+                  "activityProcessed": true
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.DeleteProperty",
+                  "$designer": {
+                    "id": "KtDQHJ"
+                  },
+                  "property": "user.cancel"
+                },
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "69RquP"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Diet_Bot.lg",
+  "id": "Diet_Bot",
+  "recognizer": "Diet_Bot.lu.qna"
+}

@@ -1,0 +1,16 @@
+[import](common.lg)
+
+# SendActivity_EZOY4A()
+[Activity
+    Text = ${SendActivity_EZOY4A_text()}
+]
+
+# SendActivity_EZOY4A_text()
+- ```There are so many alternative sources of proteins:
+1. Pulses 
+2. Soyabean
+3. Nuts
+4. Seeds
+5. Cereals and grains
+6. Mushroom
+7. Dairy products```

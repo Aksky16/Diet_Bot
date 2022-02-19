@@ -1,0 +1,569 @@
+[import](common.lg)
+
+# NumberInput_Prompt_QCJWO0_text()
+- What is your age?
+# NumberInput_Prompt_QCJWO0()
+[Activity
+    Text = ${NumberInput_Prompt_QCJWO0_text()}
+]
+
+# ChoiceInput_Prompt_98o4Is_text()
+- What is your gender?
+# ChoiceInput_Prompt_98o4Is()
+[Activity
+    Text = ${ChoiceInput_Prompt_98o4Is_text()}
+]
+
+# SendActivity_4QfI1g_text()
+- ```Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_4QfI1g()
+[Activity
+    Text = ${SendActivity_4QfI1g_text()}
+]
+
+# ChoiceInput_Prompt_Ec4Fyu_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_Ec4Fyu()
+[Activity
+    Text = ${ChoiceInput_Prompt_Ec4Fyu_text()}
+]
+
+# SendActivity_2frerX_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     6 Chapathis + Vegetable gravy/ Egg/
+     Non veg gravy (or)
+     8 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     4 Chapathis + Vegetable side dish 
+     (or) 6 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_2frerX()
+[Activity
+    Text = ${SendActivity_2frerX_text()}
+]
+
+# SendActivity_nioKWQ_text()
+- ```Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_nioKWQ()
+[Activity
+    Text = ${SendActivity_nioKWQ_text()}
+]
+
+# ChoiceInput_Prompt_YKOyLL_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_YKOyLL()
+[Activity
+    Text = ${ChoiceInput_Prompt_YKOyLL_text()}
+]
+
+# SendActivity_h5iFNC_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     6 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     6 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     4 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_h5iFNC()
+[Activity
+    Text = ${SendActivity_h5iFNC_text()}
+]
+
+# SendActivity_IFq6ko_text()
+- ```Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_IFq6ko()
+[Activity
+    Text = ${SendActivity_IFq6ko_text()}
+]
+
+# ChoiceInput_Prompt_TaxsKl_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_TaxsKl()
+[Activity
+    Text = ${ChoiceInput_Prompt_TaxsKl_text()}
+]
+
+# SendActivity_raNlXX_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     6 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     6 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+    + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     4 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_raNlXX()
+[Activity
+    Text = ${SendActivity_raNlXX_text()}
+]
+
+# SendActivity_3idjS4_text()
+- ```Whether you are in college or you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_3idjS4()
+[Activity
+    Text = ${SendActivity_3idjS4_text()}
+]
+
+# ChoiceInput_Prompt_OWjxeq_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_OWjxeq()
+[Activity
+    Text = ${ChoiceInput_Prompt_OWjxeq_text()}
+]
+
+# SendActivity_DrbwZ2_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     5 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+    + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     4 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_DrbwZ2()
+[Activity
+    Text = ${SendActivity_DrbwZ2_text()}
+]
+
+# SendActivity_WvXzBE_text()
+- ```Whether you are in college or you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_WvXzBE()
+[Activity
+    Text = ${SendActivity_WvXzBE_text()}
+]
+
+# ChoiceInput_Prompt_hbFTKy_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_hbFTKy()
+[Activity
+    Text = ${ChoiceInput_Prompt_hbFTKy_text()}
+]
+
+# SendActivity_rTwbcc_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_rTwbcc()
+[Activity
+    Text = ${SendActivity_rTwbcc_text()}
+]
+
+# SendActivity_GvZlj9_text()
+- ```Whether you are in college or you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_GvZlj9()
+[Activity
+    Text = ${SendActivity_GvZlj9_text()}
+]
+
+# ChoiceInput_Prompt_bh42nu_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_bh42nu()
+[Activity
+    Text = ${ChoiceInput_Prompt_bh42nu_text()}
+]
+
+# SendActivity_Mqw1qL_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or) 
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_Mqw1qL()
+[Activity
+    Text = ${SendActivity_Mqw1qL_text()}
+]
+
+# SendActivity_v1xgpw_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_v1xgpw()
+[Activity
+    Text = ${SendActivity_v1xgpw_text()}
+]
+
+# ChoiceInput_Prompt_NFAGfS_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_NFAGfS()
+[Activity
+    Text = ${ChoiceInput_Prompt_NFAGfS_text()}
+]
+
+# SendActivity_MZoqMr_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg + 
+     vegetable side dish + 1 serving rice with curd (or)
+     2 servings of any variety rice + boiled egg + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_MZoqMr()
+[Activity
+    Text = ${SendActivity_MZoqMr_text()}
+]
+
+# SendActivity_lwFQVJ_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_lwFQVJ()
+[Activity
+    Text = ${SendActivity_lwFQVJ_text()}
+]
+
+# ChoiceInput_Prompt_VkApKu_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_VkApKu()
+[Activity
+    Text = ${ChoiceInput_Prompt_VkApKu_text()}
+]
+
+# SendActivity_BDHCQ4_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_BDHCQ4()
+[Activity
+    Text = ${SendActivity_BDHCQ4_text()}
+]
+
+# SendActivity_IOFGHU_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. That is why this is flexible. Gaining muscle weight is the ideal way. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_IOFGHU()
+[Activity
+    Text = ${SendActivity_IOFGHU_text()}
+]
+
+# ChoiceInput_Prompt_60JU6I_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_60JU6I()
+[Activity
+    Text = ${ChoiceInput_Prompt_60JU6I_text()}
+]
+
+# SendActivity_R8uaMC_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_R8uaMC()
+[Activity
+    Text = ${SendActivity_R8uaMC_text()}
+]
+
+# SendActivity_2XhDjm_text()
+- ```It is important to consider medical conditions if any before taking up this diet. Especially those who have diabetes and cholesterol issues must carefully consider their diet. This is just a diet plan suggestion and is flexible. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Check with your doctor/physician before taking up any new diet'```
+# SendActivity_2XhDjm()
+[Activity
+    Text = ${SendActivity_2XhDjm_text()}
+]
+
+# ChoiceInput_Prompt_uzqt0Z_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_uzqt0Z()
+[Activity
+    Text = ${ChoiceInput_Prompt_uzqt0Z_text()}
+]
+
+# SendActivity_HbK0XM_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want but you must consult with your doctor/physician. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_HbK0XM()
+[Activity
+    Text = ${SendActivity_HbK0XM_text()}
+]
+
+# SendActivity_OJqph0_text()
+- ```It is important to consider medical conditions if any before taking up this diet. Especially those who have diabetes and cholesterol issues must carefully consider their diet. This is just a diet plan suggestion and is flexible. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Check with your doctor/physician before taking up any new diet'```
+# SendActivity_OJqph0()
+[Activity
+    Text = ${SendActivity_OJqph0_text()}
+]
+
+# ChoiceInput_Prompt_xM0x1f_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_xM0x1f()
+[Activity
+    Text = ${ChoiceInput_Prompt_xM0x1f_text()}
+]
+
+# SendActivity_slICJJ_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want but you must consult with your doctor/physician. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_slICJJ()
+[Activity
+    Text = ${SendActivity_slICJJ_text()}
+]
+
+# SendActivity_r0Wl6j_text()
+- ```It is important to consider medical conditions if any before taking up this diet. Especially those who have diabetes and cholesterol issues must carefully consider their diet. This is just a diet plan suggestion and is flexible. Apart from this diet regular exercising is necessary otherwise the excess calories will be stored as fat:
+1. 'Drink plain milk 2 times a day'
+2. 'Cut off carbohydrates and increase protein intake'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Check with your doctor/physician before taking up any new diet'```
+# SendActivity_r0Wl6j()
+[Activity
+    Text = ${SendActivity_r0Wl6j_text()}
+]
+
+# ChoiceInput_Prompt_DIaie0_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_DIaie0()
+[Activity
+    Text = ${ChoiceInput_Prompt_DIaie0_text()}
+]
+
+# SendActivity_x4UNfw_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy/ Egg/ 
+     Non veg gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg if you want but you must consult with your doctor/physician. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_x4UNfw()
+[Activity
+    Text = ${SendActivity_x4UNfw_text()}
+]

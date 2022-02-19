@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_sayW2J()
+[Activity
+    Text = ${ChoiceInput_Prompt_sayW2J_text()}
+]
+
+# ChoiceInput_Prompt_sayW2J_text()
+- What type of diet plan are you looking for?

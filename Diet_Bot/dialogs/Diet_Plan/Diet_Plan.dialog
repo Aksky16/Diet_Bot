@@ -1,0 +1,99 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "9Y3C6g",
+    "name": "Diet_Plan",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "Keo5qh"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "sayW2J"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_sayW2J()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
+          },
+          "property": "dialog.diet",
+          "outputFormat": "=this.value",
+          "value": "=dialog.diet",
+          "choices": [
+            "Weight Gain Diet",
+            "Weight Loss Diet",
+            "Sustainable Diet "
+          ],
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "ykrwhB"
+          },
+          "condition": "=dialog.diet == 'Weight Gain Diet'",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "7z9WFN"
+              },
+              "condition": "=dialog.diet == 'Weight Loss Diet'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "XL7Tt8"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Weight_Loss"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "C0etSh"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Sustainable"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "Ug8MBT"
+              },
+              "activityProcessed": true,
+              "dialog": "Weight_Gain"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Diet_Plan.lg",
+  "recognizer": "Diet_Plan.lu.qna",
+  "id": "Diet_Plan"
+}

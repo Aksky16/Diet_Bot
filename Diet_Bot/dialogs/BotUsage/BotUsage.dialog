@@ -1,0 +1,137 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "lPN22R",
+    "name": "BotUsage",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "du7woR"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "qM5b2A"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_qM5b2A()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
+          },
+          "property": "dialog.usage",
+          "outputFormat": "=this.value",
+          "value": "=dialog.usage",
+          "choices": [
+            "Diet Plan",
+            "BMI",
+            "Ideal Weight Calculator",
+            "All"
+          ],
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "UAuCoR"
+          },
+          "condition": "=dialog.usage == 'Diet Plan'",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "RbyH7k"
+              },
+              "condition": "=dialog.usage == 'BMI'",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "2jBjV5"
+                  },
+                  "condition": "=dialog.usage == 'Ideal Weight Calculator'",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "zafgMv"
+                      },
+                      "activity": "${SendActivity_zafgMv()}"
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "iWEwhK"
+                      },
+                      "activity": "${SendActivity_iWEwhK()}"
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "gJcULO"
+                      },
+                      "activity": "${SendActivity_gJcULO()}"
+                    },
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "Z3RWiZ"
+                      },
+                      "activity": "${SendActivity_Z3RWiZ()}"
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "Q0OOTW"
+                  },
+                  "activity": "${SendActivity_Q0OOTW()}"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "fL9Bb9"
+              },
+              "activity": "${SendActivity_fL9Bb9()}"
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.BeginDialog",
+          "$designer": {
+            "id": "HNOhtr"
+          },
+          "activityProcessed": true,
+          "dialog": "Help"
+        }
+      ]
+    }
+  ],
+  "generator": "BotUsage.lg",
+  "recognizer": "BotUsage.lu.qna",
+  "id": "BotUsage"
+}

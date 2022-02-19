@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_24KB79()
+[Activity
+    Text = ${SendActivity_24KB79_text()}
+]
+
+# SendActivity_24KB79_text()
+- At this age it is not advisable to go on a diet. Please eat heartily and grow up…

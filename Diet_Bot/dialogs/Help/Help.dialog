@@ -1,0 +1,160 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "Twd2v7",
+    "name": "Help",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "hLJ2q1"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "0NfokA"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_0NfokA()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or ",
+            "inlineOr": " or "
+          },
+          "property": "dialog.choice",
+          "outputFormat": "=this.value",
+          "value": "=dialog.choice",
+          "style": "heroCard",
+          "choices": [
+            "Diet Plan",
+            "BMI Calculator",
+            "Ideal Weight Calculator",
+            "Alternate protein sources",
+            "How to use the Bot?",
+            "Close the conversation"
+          ]
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "5mhyTY"
+          },
+          "condition": "=dialog.choice == 'Diet Plan'",
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "fYBZjV"
+              },
+              "condition": "=dialog.choice == 'BMI Calculator'",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "pxtwqE"
+                  },
+                  "condition": "=dialog.choice == 'Ideal Weight Calculator'",
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "aBeet0"
+                      },
+                      "condition": "=dialog.choice == 'Alternate protein sources'",
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "WUxVLi"
+                          },
+                          "condition": "=dialog.choice == 'How to use the Bot?'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "enkD8R"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "BotUsage"
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "vlh2gg"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "CancelDialog"
+                            }
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "znkkH4"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "AlternateProtein"
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "HPplyT"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "IdealWeight"
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "M164Ub"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "BMI"
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "$kind": "Microsoft.BeginDialog",
+              "$designer": {
+                "id": "aIKCPs"
+              },
+              "activityProcessed": true,
+              "dialog": "Diet_Plan"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Help.lg",
+  "recognizer": "Help.lu.qna",
+  "id": "Help"
+}

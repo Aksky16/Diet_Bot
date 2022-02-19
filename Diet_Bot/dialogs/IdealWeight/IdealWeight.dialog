@@ -1,0 +1,285 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "BOH7zb",
+    "name": "IdealWeight",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "thlI26"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "B6yICb"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_B6yICb()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true,
+            "inlineOrMore": ", or "
+          },
+          "property": "dialog.gender",
+          "outputFormat": "=this.value",
+          "value": "=dialog.gender",
+          "choices": [
+            "Male",
+            "Female"
+          ],
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "gk1OIe"
+          },
+          "condition": "=dialog.gender == 'Male'",
+          "actions": [
+            {
+              "$kind": "Microsoft.NumberInput",
+              "$designer": {
+                "id": "4MaVeO"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${NumberInput_Prompt_4MaVeO()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "property": "dialog.heighti",
+              "outputFormat": "=this.value",
+              "value": "=dialog.height"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "atgJEz"
+              },
+              "condition": "=dialog.heighti <142.2 || dialog.heighti > 210.8",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "h0EdHg"
+                  },
+                  "activity": "${SendActivity_h0EdHg()}"
+                },
+                {
+                  "$kind": "Microsoft.ReplaceDialog",
+                  "$designer": {
+                    "id": "rIBH3a"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ]
+            },
+            {
+              "$kind": "IWM",
+              "$designer": {
+                "id": "lbjfai"
+              },
+              "Height": "=dialog.heighti",
+              "resultProperty": "dialog.result"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "eWU3f7"
+              },
+              "activity": "${SendActivity_eWU3f7()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "IIOQRq"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_IIOQRq()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or "
+              },
+              "property": "dialog.yn",
+              "outputFormat": "=this.value",
+              "value": "=dialog.yn",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "Fhhb8P"
+              },
+              "condition": "=dialog.yn == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "FG7A0W"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "BMI"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "qURb2T"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.NumberInput",
+              "$designer": {
+                "id": "MqXXsI"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${NumberInput_Prompt_MqXXsI()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "property": "dialog.heighti",
+              "outputFormat": "=this.value",
+              "value": "=dialog.height"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "zrTtjj"
+              },
+              "condition": "=dialog.heighti <142.2 || dialog.heighti > 210.8",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "YuqJjK"
+                  },
+                  "activity": "${SendActivity_YuqJjK()}"
+                },
+                {
+                  "$kind": "Microsoft.ReplaceDialog",
+                  "$designer": {
+                    "id": "nKxJFX"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ]
+            },
+            {
+              "$kind": "IWF",
+              "$designer": {
+                "id": "ZQFQj4"
+              },
+              "Height": "=dialog.heighti",
+              "resultProperty": "dialog.result"
+            },
+            {
+              "$kind": "Microsoft.SendActivity",
+              "$designer": {
+                "id": "DX7Ixj"
+              },
+              "activity": "${SendActivity_DX7Ixj()}"
+            },
+            {
+              "$kind": "Microsoft.ChoiceInput",
+              "$designer": {
+                "id": "gOmyvz"
+              },
+              "defaultLocale": "en-us",
+              "disabled": false,
+              "maxTurnCount": 3,
+              "alwaysPrompt": false,
+              "allowInterruptions": false,
+              "prompt": "${ChoiceInput_Prompt_gOmyvz()}",
+              "unrecognizedPrompt": "",
+              "invalidPrompt": "",
+              "defaultValueResponse": "",
+              "choiceOptions": {
+                "includeNumbers": true,
+                "inlineOrMore": ", or "
+              },
+              "property": "dialog.yn",
+              "outputFormat": "=this.value",
+              "value": "=dialog.yn",
+              "choices": [
+                "Yes",
+                "No"
+              ],
+              "style": "suggestedAction"
+            },
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "res6r8"
+              },
+              "condition": "=dialog.yn == 'Yes'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "OXwh1o"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "BMI"
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.BeginDialog",
+                  "$designer": {
+                    "id": "AuYDck"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Help"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "IdealWeight.lg",
+  "recognizer": "IdealWeight.lu.qna",
+  "id": "IdealWeight"
+}

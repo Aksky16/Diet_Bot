@@ -1,0 +1,1059 @@
+{
+  "$kind": "Microsoft.AdaptiveDialog",
+  "$designer": {
+    "id": "e3B8r6",
+    "name": "Weight_Loss",
+    "comment": ""
+  },
+  "autoEndDialog": true,
+  "defaultResultProperty": "dialog.result",
+  "triggers": [
+    {
+      "$kind": "Microsoft.OnBeginDialog",
+      "$designer": {
+        "name": "BeginDialog",
+        "description": "",
+        "id": "Jn2SfW"
+      },
+      "actions": [
+        {
+          "$kind": "Microsoft.NumberInput",
+          "$designer": {
+            "id": "garsjw"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${NumberInput_Prompt_garsjw()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "property": "dialog.agel",
+          "outputFormat": "=this.value",
+          "value": "=dialog.agel"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "QxwDUn"
+          },
+          "condition": "=dialog.agel < 16 || dialog.agel >= 90",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "TUa7I6"
+              },
+              "condition": "=dialog.agel < 0 || dialog.agel > 120",
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "Ag8zkH"
+                  },
+                  "condition": "=dialog.agel < 16",
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "IGDLt2"
+                      },
+                      "condition": "=dialog.agel >= 90",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.ReplaceDialog",
+                          "$designer": {
+                            "id": "7t2gQM"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Age_M"
+                        }
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.ReplaceDialog",
+                      "$designer": {
+                        "id": "CKmQfU"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Age_L"
+                    }
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "$kind": "Microsoft.ReplaceDialog",
+                  "$designer": {
+                    "id": "0FDYI6"
+                  },
+                  "activityProcessed": true,
+                  "dialog": "Age_AB"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "$kind": "Microsoft.ChoiceInput",
+          "$designer": {
+            "id": "CBiNUK"
+          },
+          "defaultLocale": "en-us",
+          "disabled": false,
+          "maxTurnCount": 3,
+          "alwaysPrompt": false,
+          "allowInterruptions": false,
+          "prompt": "${ChoiceInput_Prompt_CBiNUK()}",
+          "unrecognizedPrompt": "",
+          "invalidPrompt": "",
+          "defaultValueResponse": "",
+          "choiceOptions": {
+            "includeNumbers": true
+          },
+          "property": "dialog.genderl",
+          "outputFormat": "=this.value",
+          "value": "=dialog.genderl",
+          "choices": [
+            "Male",
+            "Female",
+            "Rather not say"
+          ],
+          "style": "heroCard"
+        },
+        {
+          "$kind": "Microsoft.IfCondition",
+          "$designer": {
+            "id": "1tEjTD"
+          },
+          "condition": "=dialog.agel < 18",
+          "actions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "VzLrP1"
+              },
+              "condition": "=dialog.genderl == 'Male'",
+              "actions": [
+                {
+                  "$kind": "Microsoft.SendActivity",
+                  "$designer": {
+                    "id": "Xls079"
+                  },
+                  "activity": "${SendActivity_Xls079()}"
+                },
+                {
+                  "$kind": "Microsoft.ChoiceInput",
+                  "$designer": {
+                    "id": "MYhfRX"
+                  },
+                  "defaultLocale": "en-us",
+                  "disabled": false,
+                  "maxTurnCount": 3,
+                  "alwaysPrompt": false,
+                  "allowInterruptions": false,
+                  "unrecognizedPrompt": "",
+                  "invalidPrompt": "",
+                  "defaultValueResponse": "",
+                  "prompt": "${ChoiceInput_Prompt_MYhfRX()}",
+                  "choiceOptions": {
+                    "includeNumbers": true
+                  },
+                  "property": "dialog.reply",
+                  "outputFormat": "=this.value",
+                  "value": "=dialog.reply",
+                  "choices": [
+                    "Yes",
+                    "No"
+                  ],
+                  "style": "suggestedAction"
+                },
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "f9uk0k"
+                  },
+                  "condition": "=dialog.reply == 'Yes'",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "PAVGvQ"
+                      },
+                      "activity": "${SendActivity_PAVGvQ()}"
+                    },
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "WSR4Ea"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Help"
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.BeginDialog",
+                      "$designer": {
+                        "id": "01Dkji"
+                      },
+                      "activityProcessed": true,
+                      "dialog": "Help"
+                    }
+                  ]
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "X3pkuc"
+                  },
+                  "condition": "=dialog.genderl == 'Female'",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "YZXjth"
+                      },
+                      "activity": "${SendActivity_YZXjth()}"
+                    },
+                    {
+                      "$kind": "Microsoft.ChoiceInput",
+                      "$designer": {
+                        "id": "DKVnJw"
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "prompt": "${ChoiceInput_Prompt_DKVnJw()}",
+                      "choiceOptions": {
+                        "includeNumbers": true
+                      },
+                      "property": "dialog.reply",
+                      "outputFormat": "=this.value",
+                      "value": "=dialog.reply",
+                      "choices": [
+                        "Yes",
+                        "No"
+                      ],
+                      "style": "suggestedAction"
+                    },
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "tPn4vI"
+                      },
+                      "condition": "=dialog.reply == 'Yes'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "B4YQsS"
+                          },
+                          "activity": "${SendActivity_B4YQsS()}"
+                        },
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "oBrqpW"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "gVKl5g"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ]
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "aIyeQk"
+                      },
+                      "activity": "${SendActivity_aIyeQk()}"
+                    },
+                    {
+                      "$kind": "Microsoft.ChoiceInput",
+                      "$designer": {
+                        "id": "NyvSDB"
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "prompt": "${ChoiceInput_Prompt_NyvSDB()}",
+                      "choiceOptions": {
+                        "includeNumbers": true
+                      },
+                      "property": "dialog.reply",
+                      "outputFormat": "=this.value",
+                      "value": "=dialog.reply",
+                      "choices": [
+                        "Yes",
+                        "No"
+                      ],
+                      "style": "suggestedAction"
+                    },
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "I2sjTn"
+                      },
+                      "condition": "=dialog.reply == 'Yes'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "kco0hn"
+                          },
+                          "activity": "${SendActivity_kco0hn()}"
+                        },
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "PgK5xo"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "2GAwTF"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "elseActions": [
+            {
+              "$kind": "Microsoft.IfCondition",
+              "$designer": {
+                "id": "IbR97e"
+              },
+              "condition": "=dialog.agel < 30",
+              "actions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "jXtDyb"
+                  },
+                  "condition": "=dialog.genderl == 'Male'",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.SendActivity",
+                      "$designer": {
+                        "id": "AWpqRU"
+                      },
+                      "activity": "${SendActivity_AWpqRU()}"
+                    },
+                    {
+                      "$kind": "Microsoft.ChoiceInput",
+                      "$designer": {
+                        "id": "CaUR3D"
+                      },
+                      "defaultLocale": "en-us",
+                      "disabled": false,
+                      "maxTurnCount": 3,
+                      "alwaysPrompt": false,
+                      "allowInterruptions": false,
+                      "prompt": "${ChoiceInput_Prompt_CaUR3D()}",
+                      "unrecognizedPrompt": "",
+                      "invalidPrompt": "",
+                      "defaultValueResponse": "",
+                      "choiceOptions": {
+                        "includeNumbers": true
+                      },
+                      "property": "dialog.reply",
+                      "outputFormat": "=this.value",
+                      "value": "=dialog.reply",
+                      "choices": [
+                        "Yes",
+                        "No"
+                      ],
+                      "style": "suggestedAction"
+                    },
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "LtttLG"
+                      },
+                      "condition": "=dialog.reply == 'Yes'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "MAWnF5"
+                          },
+                          "activity": "${SendActivity_MAWnF5()}"
+                        },
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "CoBJCa"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.BeginDialog",
+                          "$designer": {
+                            "id": "nAmFpT"
+                          },
+                          "activityProcessed": true,
+                          "dialog": "Help"
+                        }
+                      ]
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "rZJDFI"
+                      },
+                      "condition": "=dialog.genderl == 'Female'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "VlTiai"
+                          },
+                          "activity": "${SendActivity_VlTiai()}"
+                        },
+                        {
+                          "$kind": "Microsoft.ChoiceInput",
+                          "$designer": {
+                            "id": "1G4tJh"
+                          },
+                          "defaultLocale": "en-us",
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": false,
+                          "prompt": "${ChoiceInput_Prompt_1G4tJh()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "defaultValueResponse": "",
+                          "choiceOptions": {
+                            "includeNumbers": true
+                          },
+                          "property": "dialog.reply",
+                          "outputFormat": "=this.value",
+                          "value": "=dialog.reply",
+                          "choices": [
+                            "Yes",
+                            "No"
+                          ],
+                          "style": "suggestedAction"
+                        },
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "D4H4m2"
+                          },
+                          "condition": "=dialog.reply == 'Yes'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "PgizQM"
+                              },
+                              "activity": "${SendActivity_PgizQM()}"
+                            },
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "BiQ0g4"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "WwEvOd"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ]
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "9siYmu"
+                          },
+                          "activity": "${SendActivity_9siYmu()}"
+                        },
+                        {
+                          "$kind": "Microsoft.ChoiceInput",
+                          "$designer": {
+                            "id": "HmW6Va"
+                          },
+                          "defaultLocale": "en-us",
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": false,
+                          "prompt": "${ChoiceInput_Prompt_HmW6Va()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "defaultValueResponse": "",
+                          "choiceOptions": {
+                            "includeNumbers": true
+                          },
+                          "property": "dialog.reply",
+                          "outputFormat": "=this.value",
+                          "value": "=dialog.reply",
+                          "choices": [
+                            "Yes",
+                            "No"
+                          ],
+                          "style": "suggestedAction"
+                        },
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "K4DO9e"
+                          },
+                          "condition": "=dialog.reply == 'Yes'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "RifeQ7"
+                              },
+                              "activity": "${SendActivity_RifeQ7()}"
+                            },
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "e4bx1E"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "UlaM8p"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "elseActions": [
+                {
+                  "$kind": "Microsoft.IfCondition",
+                  "$designer": {
+                    "id": "igFQmu"
+                  },
+                  "condition": "=dialog.agel < 40",
+                  "actions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "9049hm"
+                      },
+                      "condition": "=dialog.genderl == 'Male'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "RhpcdF"
+                          },
+                          "activity": "${SendActivity_RhpcdF()}"
+                        },
+                        {
+                          "$kind": "Microsoft.ChoiceInput",
+                          "$designer": {
+                            "id": "6HAhVy"
+                          },
+                          "defaultLocale": "en-us",
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": false,
+                          "prompt": "${ChoiceInput_Prompt_6HAhVy()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "defaultValueResponse": "",
+                          "choiceOptions": {
+                            "includeNumbers": true
+                          },
+                          "property": "dialog.reply",
+                          "outputFormat": "=this.value",
+                          "value": "=dialog.reply",
+                          "choices": [
+                            "Yes",
+                            "No"
+                          ],
+                          "style": "suggestedAction"
+                        },
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "wRyfNr"
+                          },
+                          "condition": "=dialog.reply == 'Yes'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "ra3CLc"
+                              },
+                              "activity": "${SendActivity_ra3CLc()}"
+                            },
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "Stkzoy"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "5zUfez"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ]
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "fdCHLg"
+                          },
+                          "condition": "=dialog.genderl == 'Female'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "aL1SdX"
+                              },
+                              "activity": "${SendActivity_aL1SdX()}"
+                            },
+                            {
+                              "$kind": "Microsoft.ChoiceInput",
+                              "$designer": {
+                                "id": "WXQgFd"
+                              },
+                              "defaultLocale": "en-us",
+                              "disabled": false,
+                              "maxTurnCount": 3,
+                              "alwaysPrompt": false,
+                              "allowInterruptions": false,
+                              "prompt": "${ChoiceInput_Prompt_WXQgFd()}",
+                              "unrecognizedPrompt": "",
+                              "invalidPrompt": "",
+                              "defaultValueResponse": "",
+                              "choiceOptions": {
+                                "includeNumbers": true
+                              },
+                              "property": "dialog.reply",
+                              "outputFormat": "=this.value",
+                              "value": "=dialog.reply",
+                              "choices": [
+                                "Yes",
+                                "No"
+                              ],
+                              "style": "suggestedAction"
+                            },
+                            {
+                              "$kind": "Microsoft.IfCondition",
+                              "$designer": {
+                                "id": "QZE1F3"
+                              },
+                              "condition": "=dialog.reply == 'Yes'",
+                              "actions": [
+                                {
+                                  "$kind": "Microsoft.SendActivity",
+                                  "$designer": {
+                                    "id": "BpbeaE"
+                                  },
+                                  "activity": "${SendActivity_BpbeaE()}"
+                                },
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "xLzpzw"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ],
+                              "elseActions": [
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "jAQUDX"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ]
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "RxAcYH"
+                              },
+                              "activity": "${SendActivity_RxAcYH()}"
+                            },
+                            {
+                              "$kind": "Microsoft.ChoiceInput",
+                              "$designer": {
+                                "id": "mTXGo3"
+                              },
+                              "defaultLocale": "en-us",
+                              "disabled": false,
+                              "maxTurnCount": 3,
+                              "alwaysPrompt": false,
+                              "allowInterruptions": false,
+                              "prompt": "${ChoiceInput_Prompt_mTXGo3()}",
+                              "unrecognizedPrompt": "",
+                              "invalidPrompt": "",
+                              "defaultValueResponse": "",
+                              "choiceOptions": {
+                                "includeNumbers": true
+                              },
+                              "property": "dialog.reply",
+                              "outputFormat": "=this.value",
+                              "value": "=dialog.reply",
+                              "choices": [
+                                "Yes",
+                                "No"
+                              ],
+                              "style": "suggestedAction"
+                            },
+                            {
+                              "$kind": "Microsoft.IfCondition",
+                              "$designer": {
+                                "id": "9NL5XR"
+                              },
+                              "condition": "=dialog.reply == 'Yes'",
+                              "actions": [
+                                {
+                                  "$kind": "Microsoft.SendActivity",
+                                  "$designer": {
+                                    "id": "L7kXrb"
+                                  },
+                                  "activity": "${SendActivity_L7kXrb()}"
+                                },
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "8YPQak"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ],
+                              "elseActions": [
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "M7f0aT"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ],
+                  "elseActions": [
+                    {
+                      "$kind": "Microsoft.IfCondition",
+                      "$designer": {
+                        "id": "OLDluw"
+                      },
+                      "condition": "=dialog.genderl == 'Male'",
+                      "actions": [
+                        {
+                          "$kind": "Microsoft.SendActivity",
+                          "$designer": {
+                            "id": "vpO2E0"
+                          },
+                          "activity": "${SendActivity_vpO2E0()}"
+                        },
+                        {
+                          "$kind": "Microsoft.ChoiceInput",
+                          "$designer": {
+                            "id": "BcZg5V"
+                          },
+                          "defaultLocale": "en-us",
+                          "disabled": false,
+                          "maxTurnCount": 3,
+                          "alwaysPrompt": false,
+                          "allowInterruptions": false,
+                          "prompt": "${ChoiceInput_Prompt_BcZg5V()}",
+                          "unrecognizedPrompt": "",
+                          "invalidPrompt": "",
+                          "defaultValueResponse": "",
+                          "choiceOptions": {
+                            "includeNumbers": true
+                          },
+                          "property": "dialog.reply",
+                          "outputFormat": "=this.value",
+                          "value": "=dialog.reply",
+                          "choices": [
+                            "Yes",
+                            "No"
+                          ],
+                          "style": "suggestedAction"
+                        },
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "ovQq2e"
+                          },
+                          "condition": "=dialog.reply == 'Yes'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "3lbY2T"
+                              },
+                              "activity": "${SendActivity_3lbY2T()}"
+                            },
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "o5hFn7"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.BeginDialog",
+                              "$designer": {
+                                "id": "VTUjDX"
+                              },
+                              "activityProcessed": true,
+                              "dialog": "Help"
+                            }
+                          ]
+                        }
+                      ],
+                      "elseActions": [
+                        {
+                          "$kind": "Microsoft.IfCondition",
+                          "$designer": {
+                            "id": "qdO4Qc"
+                          },
+                          "condition": "=dialog.genderl == 'Female'",
+                          "actions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "Y24OgL"
+                              },
+                              "activity": "${SendActivity_Y24OgL()}"
+                            },
+                            {
+                              "$kind": "Microsoft.ChoiceInput",
+                              "$designer": {
+                                "id": "kVGB2t"
+                              },
+                              "defaultLocale": "en-us",
+                              "disabled": false,
+                              "maxTurnCount": 3,
+                              "alwaysPrompt": false,
+                              "allowInterruptions": false,
+                              "prompt": "${ChoiceInput_Prompt_kVGB2t()}",
+                              "unrecognizedPrompt": "",
+                              "invalidPrompt": "",
+                              "defaultValueResponse": "",
+                              "choiceOptions": {
+                                "includeNumbers": true
+                              },
+                              "property": "dialog.reply",
+                              "outputFormat": "=this.value",
+                              "value": "=dialog.reply",
+                              "choices": [
+                                "Yes",
+                                "No"
+                              ],
+                              "style": "suggestedAction"
+                            },
+                            {
+                              "$kind": "Microsoft.IfCondition",
+                              "$designer": {
+                                "id": "v69Qg8"
+                              },
+                              "condition": "=dialog.reply == 'Yes'",
+                              "actions": [
+                                {
+                                  "$kind": "Microsoft.SendActivity",
+                                  "$designer": {
+                                    "id": "JU5tky"
+                                  },
+                                  "activity": "${SendActivity_JU5tky()}"
+                                },
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "kqadea"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ],
+                              "elseActions": [
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "oqHgoI"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ]
+                            }
+                          ],
+                          "elseActions": [
+                            {
+                              "$kind": "Microsoft.SendActivity",
+                              "$designer": {
+                                "id": "wXUsGR"
+                              },
+                              "activity": "${SendActivity_wXUsGR()}"
+                            },
+                            {
+                              "$kind": "Microsoft.ChoiceInput",
+                              "$designer": {
+                                "id": "Yw9xx3"
+                              },
+                              "defaultLocale": "en-us",
+                              "disabled": false,
+                              "maxTurnCount": 3,
+                              "alwaysPrompt": false,
+                              "allowInterruptions": false,
+                              "prompt": "${ChoiceInput_Prompt_Yw9xx3()}",
+                              "unrecognizedPrompt": "",
+                              "invalidPrompt": "",
+                              "defaultValueResponse": "",
+                              "choiceOptions": {
+                                "includeNumbers": true
+                              },
+                              "property": "dialog.reply",
+                              "outputFormat": "=this.value",
+                              "value": "=dialog.reply",
+                              "choices": [
+                                "Yes",
+                                "No"
+                              ],
+                              "style": "suggestedAction"
+                            },
+                            {
+                              "$kind": "Microsoft.IfCondition",
+                              "$designer": {
+                                "id": "L2zyFw"
+                              },
+                              "condition": "=dialog.reply == 'Yes'",
+                              "actions": [
+                                {
+                                  "$kind": "Microsoft.SendActivity",
+                                  "$designer": {
+                                    "id": "tu8fHq"
+                                  },
+                                  "activity": "${SendActivity_tu8fHq()}"
+                                },
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "9UXujg"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ],
+                              "elseActions": [
+                                {
+                                  "$kind": "Microsoft.BeginDialog",
+                                  "$designer": {
+                                    "id": "PgMNzW"
+                                  },
+                                  "activityProcessed": true,
+                                  "dialog": "Help"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generator": "Weight_Loss.lg",
+  "recognizer": "Weight_Loss.lu.qna",
+  "id": "Weight_Loss"
+}

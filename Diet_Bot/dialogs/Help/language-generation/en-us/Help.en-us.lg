@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_0NfokA()
+[Activity
+    Text = ${ChoiceInput_Prompt_0NfokA_text()}
+]
+
+# ChoiceInput_Prompt_0NfokA_text()
+- What can I do for you?

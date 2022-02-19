@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_p0I6Ml()
+[Activity
+    Text = ${SendActivity_p0I6Ml_text()}
+]
+
+# SendActivity_p0I6Ml_text()
+- Sorry, I am looking for a value between 1 and 110.

@@ -1,0 +1,564 @@
+[import](common.lg)
+
+# NumberInput_Prompt_garsjw()
+[Activity
+    Text = ${NumberInput_Prompt_garsjw_text()}
+]
+
+# NumberInput_Prompt_garsjw_text()
+- What is your age?
+# ChoiceInput_Prompt_CBiNUK()
+[Activity
+    Text = ${ChoiceInput_Prompt_CBiNUK_text()}
+]
+
+# ChoiceInput_Prompt_CBiNUK_text()
+- What is your gender?
+# SendActivity_Xls079()
+[Activity
+    Text = ${SendActivity_Xls079_text()}
+]
+
+# SendActivity_Xls079_text()
+- ```As teenagers, it's not recommended to go on a weight loss diet unless you are overweight. However if you are feeling self conscious here is what you need to do:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# ChoiceInput_Prompt_MYhfRX()
+[Activity
+    Text = ${ChoiceInput_Prompt_MYhfRX_text()}
+]
+
+# ChoiceInput_Prompt_MYhfRX_text()
+- Would you like to look at a sample diet plan for a day?
+# SendActivity_PAVGvQ()
+[Activity
+    Text = ${SendActivity_PAVGvQ_text()}
+]
+
+# SendActivity_PAVGvQ_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     6 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_YZXjth_text()
+- ```As teenagers, it's not recommended to go on a weight loss diet unless you are overweight. However if you are feeling self conscious here is what you need to do:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_YZXjth()
+[Activity
+    Text = ${SendActivity_YZXjth_text()}
+]
+
+# ChoiceInput_Prompt_DKVnJw_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_DKVnJw()
+[Activity
+    Text = ${ChoiceInput_Prompt_DKVnJw_text()}
+]
+
+# SendActivity_B4YQsS_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     3 Chapathis + Vegetable gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_B4YQsS()
+[Activity
+    Text = ${SendActivity_B4YQsS_text()}
+]
+
+# SendActivity_aIyeQk_text()
+- ```As teenagers, it's not recommended to go on a weight loss diet unless you are overweight. However if you are feeling self conscious here is what you need to do:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_aIyeQk()
+[Activity
+    Text = ${SendActivity_aIyeQk_text()}
+]
+
+# ChoiceInput_Prompt_NyvSDB_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_NyvSDB()
+[Activity
+    Text = ${ChoiceInput_Prompt_NyvSDB_text()}
+]
+
+# SendActivity_kco0hn_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice +
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_kco0hn()
+[Activity
+    Text = ${SendActivity_kco0hn_text()}
+]
+
+# SendActivity_AWpqRU()
+[Activity
+    Text = ${SendActivity_AWpqRU_text()}
+]
+
+# SendActivity_AWpqRU_text()
+- ```Whether you are in college or going to work you may not have enough time to follow a strict diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts in between meals if you are hungry.'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# ChoiceInput_Prompt_CaUR3D()
+[Activity
+    Text = ${ChoiceInput_Prompt_CaUR3D_text()}
+]
+
+# ChoiceInput_Prompt_CaUR3D_text()
+- Would you like to see a sample diet plan?
+# SendActivity_VlTiai_text()
+- ```Whether you are in college or going to work you may not have enough time to follow a strict diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts in between meals if you are hungry.'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_VlTiai()
+[Activity
+    Text = ${SendActivity_VlTiai_text()}
+]
+
+# ChoiceInput_Prompt_1G4tJh_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_1G4tJh()
+[Activity
+    Text = ${ChoiceInput_Prompt_1G4tJh_text()}
+]
+
+# SendActivity_9siYmu_text()
+- ```Whether you are in college or going to work you may not have enough time to follow a strict diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts in between meals if you are hungry.'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_9siYmu()
+[Activity
+    Text = ${SendActivity_9siYmu_text()}
+]
+
+# ChoiceInput_Prompt_HmW6Va_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_HmW6Va()
+[Activity
+    Text = ${ChoiceInput_Prompt_HmW6Va_text()}
+]
+
+# SendActivity_RhpcdF_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'```
+# SendActivity_RhpcdF()
+[Activity
+    Text = ${SendActivity_RhpcdF_text()}
+]
+
+# ChoiceInput_Prompt_6HAhVy_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_6HAhVy()
+[Activity
+    Text = ${ChoiceInput_Prompt_6HAhVy_text()}
+]
+
+# SendActivity_aL1SdX_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'```
+# SendActivity_aL1SdX()
+[Activity
+    Text = ${SendActivity_aL1SdX_text()}
+]
+
+# ChoiceInput_Prompt_WXQgFd_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_WXQgFd()
+[Activity
+    Text = ${ChoiceInput_Prompt_WXQgFd_text()}
+]
+
+# SendActivity_RxAcYH_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'```
+# SendActivity_RxAcYH()
+[Activity
+    Text = ${SendActivity_RxAcYH_text()}
+]
+
+# ChoiceInput_Prompt_mTXGo3_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_mTXGo3()
+[Activity
+    Text = ${ChoiceInput_Prompt_mTXGo3_text()}
+]
+
+# SendActivity_vpO2E0()
+[Activity
+    Text = ${SendActivity_vpO2E0_text()}
+]
+
+# SendActivity_vpO2E0_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. Please note that you must consider any medical conditions first before taking up this weight loss diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'
+10. 'If you have any medical conditions or ailments please consult your doctor/physician before trying this diet plan.'```
+# ChoiceInput_Prompt_BcZg5V()
+[Activity
+    Text = ${ChoiceInput_Prompt_BcZg5V_text()}
+]
+
+# ChoiceInput_Prompt_BcZg5V_text()
+- Would you like to see a sample diet plan?
+# SendActivity_MAWnF5_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_MAWnF5()
+[Activity
+    Text = ${SendActivity_MAWnF5_text()}
+]
+
+# SendActivity_PgizQM_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     3 Chapathis + Vegetable gravy (or)
+     5 Dosas + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_PgizQM()
+[Activity
+    Text = ${SendActivity_PgizQM_text()}
+]
+
+# SendActivity_RifeQ7_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     4 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_RifeQ7()
+[Activity
+    Text = ${SendActivity_RifeQ7_text()}
+]
+
+# SendActivity_ra3CLc_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     4 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_ra3CLc()
+[Activity
+    Text = ${SendActivity_ra3CLc_text()}
+]
+
+# SendActivity_BpbeaE_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     4 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_BpbeaE()
+[Activity
+    Text = ${SendActivity_BpbeaE_text()}
+]
+
+# SendActivity_L7kXrb_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy (or)
+     4 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_L7kXrb()
+[Activity
+    Text = ${SendActivity_L7kXrb_text()}
+]
+
+# SendActivity_3lbY2T()
+[Activity
+    Text = ${SendActivity_3lbY2T_text()}
+]
+
+# SendActivity_3lbY2T_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     3 Chapathis + Vegetable gravy (or)
+     3 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice +
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     2 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_Y24OgL_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. Please note that you must consider any medical conditions first before taking up this weight loss diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'
+10. 'If you have any medical conditions or ailments please consult your doctor/physician before trying this diet plan.'```
+# SendActivity_Y24OgL()
+[Activity
+    Text = ${SendActivity_Y24OgL_text()}
+]
+
+# ChoiceInput_Prompt_kVGB2t_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_kVGB2t()
+[Activity
+    Text = ${ChoiceInput_Prompt_kVGB2t_text()}
+]
+
+# SendActivity_JU5tky_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     3 Chapathis + Vegetable gravy (or)
+     3 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice +
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     2 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_JU5tky()
+[Activity
+    Text = ${SendActivity_JU5tky_text()}
+]
+
+# SendActivity_wXUsGR_text()
+- ```If you are going to work you may not have enough time to follow a strict diet. However it is crucial to ensure you get the right amount of vitamins and calcium. Please note that you must consider any medical conditions first before taking up this weight loss diet. So here is a flexible diet plan which must be followed along with exercising and routine maintenance:
+1. 'Drink honey + water every morning on an empty stomach'
+2. 'Cut off carbohydrates'
+3. 'Avoid junk food'
+4. 'If you are in a situation in which you can't cook meals on your own, or if there is no access to home cooked meals, then while eating out order simple dishes in small quantities. Make sure you have healthy snacks like fruits and nuts, in between meals if you are hungry.'
+5. 'Try to not consume non\-veg outside. Do go for non\-veg meals cooked at home, and avoid deep fried items.'
+6. 'Have an early dinner'
+7. 'Drink lots of water'
+8. 'Eat a lot of fiber'
+9. 'Exercise regularly'
+10. 'If you have any medical conditions or ailments please consult your doctor/physician before trying this diet plan.'```
+# SendActivity_wXUsGR()
+[Activity
+    Text = ${SendActivity_wXUsGR_text()}
+]
+
+# ChoiceInput_Prompt_Yw9xx3_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_Yw9xx3()
+[Activity
+    Text = ${ChoiceInput_Prompt_Yw9xx3_text()}
+]
+
+# SendActivity_tu8fHq_text()
+- ```DIET PLAN:
+\- Honey + water [75 ml] (Before breakfast)
+\- (For breakfast):
+     3 Chapathis + Vegetable gravy (or)
+     3 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + 
+     vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice +
+     vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     2 Chapathis + Vegetable side dish 
+     (or) 3 Dosas + Sambar
+Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_tu8fHq()
+[Activity
+    Text = ${SendActivity_tu8fHq_text()}
+]

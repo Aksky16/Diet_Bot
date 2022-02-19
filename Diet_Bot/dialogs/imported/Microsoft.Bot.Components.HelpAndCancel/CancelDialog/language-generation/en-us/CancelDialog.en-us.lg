@@ -1,0 +1,34 @@
+[import](common.lg)
+
+# SendActivity_ContinueConfirmation()
+[Activity
+    Text = ${SendActivity_ContinueConfirmation_text()}
+]
+
+# SendActivity_ContinueConfirmation_text()
+- OK, let's continue.
+- Alright, let's move on.
+- Let's continue then.
+
+> Imported: 184d315b4c724ad6466cf3feb5320df4
+# ChoiceInput_Prompt_rLgy8b_text()
+- Are you sure you want to cancel?
+# ChoiceInput_Prompt_rLgy8b()
+[Activity
+    Text = ${ChoiceInput_Prompt_rLgy8b_text()}
+]
+
+# SendActivity_ouSh6e_text()
+- (You can now close the bot)
+# SendActivity_ouSh6e()
+[Activity
+    Text = ${SendActivity_ouSh6e_text()}
+]
+
+# SendActivity_8MF7jb()
+[Activity
+    Text = ${SendActivity_CancelConfirmation_text()}
+]
+
+# SendActivity_CancelConfirmation_text()
+- Cancelling...

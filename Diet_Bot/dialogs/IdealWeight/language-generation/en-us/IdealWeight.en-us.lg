@@ -1,0 +1,116 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_B6yICb()
+[Activity
+    Text = ${ChoiceInput_Prompt_B6yICb_text()}
+]
+
+# ChoiceInput_Prompt_B6yICb_text()
+- What is your gender?
+# NumberInput_Prompt_4MaVeO_text()
+- Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+# NumberInput_Prompt_4MaVeO()
+[Activity
+    Text = ${NumberInput_Prompt_4MaVeO_text()}
+]
+
+# SendActivity_h0EdHg_text()
+- Ideal weight calculations are not accurate for this height.
+# SendActivity_h0EdHg()
+[Activity
+    Text = ${SendActivity_h0EdHg_text()}
+]
+
+# NumberInput_Prompt_MqXXsI_text()
+- Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+# NumberInput_Prompt_MqXXsI()
+[Activity
+    Text = ${NumberInput_Prompt_MqXXsI_text()}
+]
+
+# SendActivity_YuqJjK_text()
+- Ideal weight calculations are not accurate for this height.
+# SendActivity_YuqJjK()
+[Activity
+    Text = ${SendActivity_YuqJjK_text()}
+]
+
+# ChoiceInput_Prompt_gOmyvz_text()
+- If you enter the Ideal weight and your height in the BMI calculator  you will find that it will be apt. Would you like to see it?
+# ChoiceInput_Prompt_gOmyvz()
+[Activity
+    Text = ${ChoiceInput_Prompt_gOmyvz_text()}
+]
+
+# ChoiceInput_Prompt_IIOQRq_text()
+- If you enter the Ideal weight and your height in the BMI calculator  you will find that it will be apt. Would you like to see it?
+# ChoiceInput_Prompt_IIOQRq()
+[Activity
+    Text = ${ChoiceInput_Prompt_IIOQRq_text()}
+]
+
+# SendActivity_eWU3f7()
+[Activity
+    Attachments = ${json(SendActivity_eWU3f7_attachment_Zv7IGu())}
+]
+
+# SendActivity_eWU3f7_attachment_Zv7IGu()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.heighti} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.result} kg"
+        }
+      ]
+    }
+  ]
+}```
+
+# SendActivity_DX7Ixj_attachment_Zv7IGu()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.heighti} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.result} kg"
+        }
+      ]
+    }
+  ]
+}```
+
+# SendActivity_DX7Ixj()
+[Activity
+    Attachments = ${json(SendActivity_DX7Ixj_attachment_Zv7IGu())}
+]

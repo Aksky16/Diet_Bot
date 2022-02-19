@@ -1,0 +1,213 @@
+[import](common.lg)
+
+# NumberInput_Prompt_PrMWEy()
+[Activity
+    Text = ${NumberInput_Prompt_PrMWEy_text()}
+]
+
+# NumberInput_Prompt_PrMWEy_text()
+- Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+# NumberInput_Prompt_FpfKnP()
+[Activity
+    Text = ${NumberInput_Prompt_FpfKnP_text()}
+]
+
+# NumberInput_Prompt_FpfKnP_text()
+- Enter your weight in kilograms. The number is enough (Eg: If you are weighing 60 kgs type in '60').
+# SendActivity_qS0csP()
+[Activity
+    Text = ${SendActivity_qS0csP_text()}
+]
+
+# SendActivity_qS0csP_text()
+- BMI Calculations and insights are not accurate for this height.
+# SendActivity_n6RaQA()
+[Activity
+    Text = ${SendActivity_n6RaQA_text()}
+]
+
+# SendActivity_n6RaQA_text()
+- BMI Calculations and insights are not accurate for this weight.
+# SendActivity_r70Qca()
+[Activity
+    Text = ${SendActivity_r70Qca_text()}
+    Attachments = ${json(SendActivity_r70Qca_attachment_mrshDS())}
+]
+
+# SendActivity_r70Qca_attachment_mrshDS()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.height} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.weight} kg"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "BMI:",
+          "value": "${dialog.result} kg/m2"
+        }
+      ]
+    }
+  ]
+}```
+
+# SendActivity_r70Qca_text()
+- You are underweight. Your BMI must be around 18.5 to 24.9.
+# SendActivity_dV9zlX()
+[Activity
+    Text = ${SendActivity_dV9zlX_text()}
+    Attachments = ${json(SendActivity_dV9zlX_attachment_5Odi27())}
+]
+
+# SendActivity_dV9zlX_text()
+- Your weight is apt. Your BMI is normal.
+# SendActivity_Z63Pog()
+[Activity
+    Text = ${SendActivity_Z63Pog_text()}
+    Attachments = ${json(SendActivity_Z63Pog_attachment_zVGRx2())}
+]
+
+# SendActivity_Z63Pog_text()
+- You are overweight. Your BMI must be around 18.5 to 24.9.
+# SendActivity_9jmA5n()
+[Activity
+    Text = ${SendActivity_9jmA5n_text()}
+    Attachments = ${json(SendActivity_9jmA5n_attachment_1u0PxP())}
+]
+
+# SendActivity_9jmA5n_text()
+- You are obese. Your BMI must be around 18.5 to 24.9. Please consider some serious lifestyle changes.
+# SendActivity_dV9zlX_attachment_5Odi27()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.height} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.weight} kg"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "BMI:",
+          "value": "${dialog.result} kg/m2"
+        }
+      ]
+    }
+  ]
+}```
+
+# SendActivity_Z63Pog_attachment_zVGRx2()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.height} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.weight} kg"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "BMI:",
+          "value": "${dialog.result} kg/m2"
+        }
+      ]
+    }
+  ]
+}```
+
+# SendActivity_9jmA5n_attachment_1u0PxP()
+- ```{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.2",
+  "type": "AdaptiveCard",
+  "body": [
+     {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Height:",
+          "value": "${dialog.height} cm"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Weight:",
+          "value": "${dialog.weight} kg"
+        }
+      ]
+    },
+ 
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "BMI:",
+          "value": "${dialog.result} kg/m2"
+        }
+      ]
+    }
+  ]
+}```

@@ -1,0 +1,101 @@
+[import](common.lg)
+
+# ChoiceInput_Prompt_qM5b2A()
+[Activity
+    Text = ${ChoiceInput_Prompt_qM5b2A_text()}
+]
+
+# ChoiceInput_Prompt_qM5b2A_text()
+- ```What would you like to look at first?
+```
+# SendActivity_fL9Bb9()
+[Activity
+    Text = ${SendActivity_fL9Bb9_text()}
+]
+
+# SendActivity_fL9Bb9_text()
+- ```To use the bot to obtain diet plans:
+STEP 1: Type in 'Diet plan'.
+STEP 2: There are 3 primary options in diet plans for you.
+STEP 3. Type in the desired diet plan.
+STEP 4: Enter your age.
+STEP 5: Enter your gender.
+STEP 6: A set of information will be provided with which you can create a customized diet for you. If required you can have a look at a sample diet plan too.
+STEP 7: Once you are done you can have a look at alternative sources of proteins, you can calculate your BMI (Basal Metabolic Index) or you can calculate your Ideal weight.
+STEP 8: To have a look at alternative proteins, type in 'Alternate protein sources'. To have a look at the BMI Calculator type in 'BMI'. To have a look at Ideal weight calculator type in 'Ideal weight'. 
+STEP 9: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_Q0OOTW()
+[Activity
+    Text = ${SendActivity_Q0OOTW_text()}
+]
+
+# SendActivity_Q0OOTW_text()
+- ```To use the bot to obtain BMI:
+STEP 1: Type in 'BMI'.
+STEP 2. Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+STEP 3: Enter your weight in kilograms. The number is enough (Eg: If you are weighing 60 kgs type in '60').
+STEP 4: Your BMI will be displayed along with its inference.
+STEP 5: Once you are done you can have a look at alternative sources of proteins, look at diet plans if you already haven't done so or calculate your Ideal weight.
+STEP 6: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_zafgMv()
+[Activity
+    Text = ${SendActivity_zafgMv_text()}
+]
+
+# SendActivity_zafgMv_text()
+- ```To use the bot to obtain ideal weight:
+STEP 1: Type in 'Ideal weight calculator'.
+STEP 2: Enter your gender.
+STEP 3: Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+STEP 4: Your approximate ideal weight will be calculated and displayed.
+STEP 5: Once you are done you can have a look at diet plans, alternative sources of proteins, or you can calculate your BMI (Basal Metabolic Index).
+STEP 6: To have a look at diet plans, type in 'Diet plan'. To have a look at alternative proteins, type in 'Alternate protein sources'. To have a look at BMI Calculator type in 'BMI' 
+STEP 7: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_iWEwhK_text()
+- ```To use the bot to obtain diet plans:
+STEP 1: Type in 'Diet plan'.
+STEP 2: There are 3 primary options in diet plans for you.
+STEP 3. Type in the desired diet plan.
+STEP 4: Enter your age.
+STEP 5: Enter your gender.
+STEP 6: A set of information will be provided with which you can create a customized diet for you. If required you can have a look at a sample diet plan too.
+STEP 7: Once you are done you can have a look at alternative sources of proteins, you can calculate your BMI (Basal Metabolic Index) or you can calculate your Ideal weight.
+STEP 8: To have a look at alternative proteins, type in 'Alternate protein sources'. To have a look at the BMI Calculator type in 'BMI'. To have a look at Ideal weight calculator type in 'Ideal weight'. 
+STEP 9: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_iWEwhK()
+[Activity
+    Text = ${SendActivity_iWEwhK_text()}
+]
+
+# SendActivity_gJcULO_text()
+- ```To use the bot to obtain BMI:
+STEP 1: Type in 'BMI'.
+STEP 2. Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+STEP 3: Enter your weight in kilograms. The number is enough (Eg: If you are weighing 60 kgs type in '60').
+STEP 4: Your BMI will be displayed along with its inference.
+STEP 5: Once you are done you can have a look at alternative sources of proteins, look at diet plans if you already haven't done so or calculate your Ideal weight.
+STEP 6: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_gJcULO()
+[Activity
+    Text = ${SendActivity_gJcULO_text()}
+]
+
+# SendActivity_Z3RWiZ_text()
+- ```To use the bot to obtain ideal weight:
+STEP 1: Type in 'Ideal weight calculator'.
+STEP 2: Enter your gender.
+STEP 3: Enter your height in centimeters. The number is enough (Eg: If your height is 1.75 m type in '175').
+STEP 4: Your approximate ideal weight will be calculated and displayed.
+STEP 5: Once you are done you can have a look at diet plans, alternative sources of proteins, or you can calculate your BMI (Basal Metabolic Index).
+STEP 6: To have a look at diet plans, type in 'Diet plan'. To have a look at alternative proteins, type in 'Alternate protein sources'. To have a look at BMI Calculator type in 'BMI' 
+STEP 7: If you are done you can type in 'Exit' and then close the bot.
+```
+# SendActivity_Z3RWiZ()
+[Activity
+    Text = ${SendActivity_Z3RWiZ_text()}
+]

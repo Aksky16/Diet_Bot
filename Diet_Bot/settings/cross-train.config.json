@@ -1,0 +1,38 @@
+{
+  "Diet_Bot.en-us": {
+    "rootDialog": true,
+    "triggers": {
+      "": [
+        "Help.en-us"
+      ],
+      "DietPlan": [
+        "Help.en-us",
+        "Diet_Plan.en-us"
+      ],
+      "BMI": [
+        "Help.en-us",
+        "BMI.en-us"
+      ],
+      "Ideal_Weight": [
+        "Help.en-us",
+        "IdealWeight.en-us"
+      ],
+      "Bot_Instructions": [
+        "Help.en-us",
+        "BotUsage.en-us"
+      ],
+      "Help": [
+        "Help.en-us",
+        "Help.en-us"
+      ],
+      "AlternateProteins": [
+        "Help.en-us",
+        "AlternateProtein.en-us"
+      ],
+      "Cancel": [
+        "Help.en-us",
+        "Help.en-us"
+      ]
+    }
+  }
+}

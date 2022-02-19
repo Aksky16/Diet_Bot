@@ -1,0 +1,558 @@
+[import](common.lg)
+
+# NumberInput_Prompt_INN3J3_text()
+- What is your age?
+# NumberInput_Prompt_INN3J3()
+[Activity
+    Text = ${NumberInput_Prompt_INN3J3_text()}
+]
+
+# ChoiceInput_Prompt_tnDbVW_text()
+- What is your gender?
+# ChoiceInput_Prompt_tnDbVW()
+[Activity
+    Text = ${ChoiceInput_Prompt_tnDbVW_text()}
+]
+
+# SendActivity_ZpAlRI_text()
+- ```A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_ZpAlRI()
+[Activity
+    Text = ${SendActivity_ZpAlRI_text()}
+]
+
+# ChoiceInput_Prompt_0Lh2uB_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_0Lh2uB()
+[Activity
+    Text = ${ChoiceInput_Prompt_0Lh2uB_text()}
+]
+
+# SendActivity_ZCprPV_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_ZCprPV()
+[Activity
+    Text = ${SendActivity_ZCprPV_text()}
+]
+
+# SendActivity_sqrI5g_text()
+- ```A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_sqrI5g()
+[Activity
+    Text = ${SendActivity_sqrI5g_text()}
+]
+
+# ChoiceInput_Prompt_8zMGcK_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_8zMGcK()
+[Activity
+    Text = ${ChoiceInput_Prompt_8zMGcK_text()}
+]
+
+# SendActivity_1vxQs3_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_1vxQs3()
+[Activity
+    Text = ${SendActivity_1vxQs3_text()}
+]
+
+# SendActivity_aV0Z1C_text()
+- ```A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_aV0Z1C()
+[Activity
+    Text = ${SendActivity_aV0Z1C_text()}
+]
+
+# ChoiceInput_Prompt_f3bxgF_text()
+- Would you like to look at a sample diet plan for a day?
+# ChoiceInput_Prompt_f3bxgF()
+[Activity
+    Text = ${ChoiceInput_Prompt_f3bxgF_text()}
+]
+
+# SendActivity_YJS7tf_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_YJS7tf()
+[Activity
+    Text = ${SendActivity_YJS7tf_text()}
+]
+
+# SendActivity_DHOSe4_text()
+- ```Either you are in college or you are going to work. You may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_DHOSe4()
+[Activity
+    Text = ${SendActivity_DHOSe4_text()}
+]
+
+# ChoiceInput_Prompt_Db09wd_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_Db09wd()
+[Activity
+    Text = ${ChoiceInput_Prompt_Db09wd_text()}
+]
+
+# SendActivity_mDxZKC_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_mDxZKC()
+[Activity
+    Text = ${SendActivity_mDxZKC_text()}
+]
+
+# SendActivity_T4oGnP_text()
+- ```Either you are in college or you are going to work. You may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_T4oGnP()
+[Activity
+    Text = ${SendActivity_T4oGnP_text()}
+]
+
+# ChoiceInput_Prompt_ZAVEq4_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_ZAVEq4()
+[Activity
+    Text = ${ChoiceInput_Prompt_ZAVEq4_text()}
+]
+
+# SendActivity_efgx9o_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_efgx9o()
+[Activity
+    Text = ${SendActivity_efgx9o_text()}
+]
+
+# SendActivity_EYinOo_text()
+- ```Either you are in college or you are going to work. You may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_EYinOo()
+[Activity
+    Text = ${SendActivity_EYinOo_text()}
+]
+
+# ChoiceInput_Prompt_YrFMxE_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_YrFMxE()
+[Activity
+    Text = ${ChoiceInput_Prompt_YrFMxE_text()}
+]
+
+# SendActivity_afHtWd_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_afHtWd()
+[Activity
+    Text = ${SendActivity_afHtWd_text()}
+]
+
+# SendActivity_9iadUt_text()
+- ```If you are going to work you may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_9iadUt()
+[Activity
+    Text = ${SendActivity_9iadUt_text()}
+]
+
+# ChoiceInput_Prompt_EJLQ98_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_EJLQ98()
+[Activity
+    Text = ${ChoiceInput_Prompt_EJLQ98_text()}
+]
+
+# SendActivity_8ZX7Cr_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_8ZX7Cr()
+[Activity
+    Text = ${SendActivity_8ZX7Cr_text()}
+]
+
+# SendActivity_Gh4GXz_text()
+- ```If you are going to work you may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_Gh4GXz()
+[Activity
+    Text = ${SendActivity_Gh4GXz_text()}
+]
+
+# ChoiceInput_Prompt_Rsh1DR_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_Rsh1DR()
+[Activity
+    Text = ${ChoiceInput_Prompt_Rsh1DR_text()}
+]
+
+# SendActivity_lSMxEO_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_lSMxEO()
+[Activity
+    Text = ${SendActivity_lSMxEO_text()}
+]
+
+# SendActivity_NRsifg_text()
+- ```If you are going to work you may not have enough time to follow a strict diet plan. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'```
+# SendActivity_NRsifg()
+[Activity
+    Text = ${SendActivity_NRsifg_text()}
+]
+
+# ChoiceInput_Prompt_JwylZd_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_JwylZd()
+[Activity
+    Text = ${ChoiceInput_Prompt_JwylZd_text()}
+]
+
+# SendActivity_syKuOE_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice +
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want. Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_syKuOE()
+[Activity
+    Text = ${SendActivity_syKuOE_text()}
+]
+
+# SendActivity_fRFu5X_text()
+- ```It is very important to consider any medical conditions before taking up a diet. People having diabetes and cholesterol must carefully consider their diet. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Consult with a doctor/physician before finalizing a diet plan'```
+# SendActivity_fRFu5X()
+[Activity
+    Text = ${SendActivity_fRFu5X_text()}
+]
+
+# ChoiceInput_Prompt_V3LxKS_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_V3LxKS()
+[Activity
+    Text = ${ChoiceInput_Prompt_V3LxKS_text()}
+]
+
+# SendActivity_XsMMeF_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want but you must consult with your doctor/physician before taking up a new diet plan . Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_XsMMeF()
+[Activity
+    Text = ${SendActivity_XsMMeF_text()}
+]
+
+# SendActivity_4wRGLF_text()
+- ```It is very important to consider any medical conditions before taking up a diet. People having diabetes and cholesterol must carefully consider their diet. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Consult with a doctor/physician before finalizing a diet plan'```
+# SendActivity_4wRGLF()
+[Activity
+    Text = ${SendActivity_4wRGLF_text()}
+]
+
+# ChoiceInput_Prompt_Fs0hcp_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_Fs0hcp()
+[Activity
+    Text = ${ChoiceInput_Prompt_Fs0hcp_text()}
+]
+
+# SendActivity_Ym7sOc_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or) 4 Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want but you must consult with your doctor/physician before taking up a new diet plan . Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_Ym7sOc()
+[Activity
+    Text = ${SendActivity_Ym7sOc_text()}
+]
+
+# SendActivity_aKYtEK_text()
+- ```It is very important to consider any medical conditions before taking up a diet. People having diabetes and cholesterol must carefully consider their diet. That is why this is flexible. A sustainable diet consists of a balance of all macronutrients. Apart from following this diet other measures such as exercising and meditation will improve the overall balance in life:
+1. 'Analyze your lifestyle and identify what made you look for alternate diets in the first place'
+2. 'Don't go for food which are non\-perishable or preserved ones'
+3. 'Avoid junk food'
+4. 'Try to eat home cooked meals all the time'
+5. 'Have an early dinner'
+6. 'Drink lots of water'
+7. 'Eat a lot of fiber'
+8. 'Exercise regularly'
+9. 'Consult with a doctor/physician before finalizing a diet plan'```
+# SendActivity_aKYtEK()
+[Activity
+    Text = ${SendActivity_aKYtEK_text()}
+]
+
+# ChoiceInput_Prompt_xDjJdB_text()
+- Would you like to see a sample diet plan?
+# ChoiceInput_Prompt_xDjJdB()
+[Activity
+    Text = ${ChoiceInput_Prompt_xDjJdB_text()}
+]
+
+# SendActivity_czZyif_text()
+- ```DIET PLAN:
+\- Glass of milk (Before breakfast)
+\- (For breakfast):
+     4 Chapathis + Vegetable gravy(or)
+     5 Idlis + Chutney/Sambar
+\- 1 Banana (If hungry before lunch)
+\- (For lunch):
+     1 serving rice with dal + boiled egg 
+     + vegetable side dish + 
+     1 serving rice with curd (or)
+     2 servings of any variety rice + 
+     boiled egg + vegetable side dish
+\- Any fruits (If hungry before dinner)
+\-(For dinner):
+     3 Chapathis + Vegetable side dish 
+     (or)  Idlis + Sambar
+You can include a non\-veg side dish instead of veg for lunch if you want but you must consult with your doctor/physician before taking up a new diet plan . Apart from this, drinking lots of water and exercising regularly is essential.```
+# SendActivity_czZyif()
+[Activity
+    Text = ${SendActivity_czZyif_text()}
+]

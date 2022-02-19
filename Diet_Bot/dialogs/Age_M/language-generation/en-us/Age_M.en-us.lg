@@ -1,0 +1,9 @@
+[import](common.lg)
+
+# SendActivity_o10ffF()
+[Activity
+    Text = ${SendActivity_o10ffF_text()}
+]
+
+# SendActivity_o10ffF_text()
+- You don't need a diet plan. You are already following a healthy lifestyle and living a long life.
