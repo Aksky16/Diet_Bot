@@ -21,6 +21,17 @@ A chatbot which gives you diet plans, calculates BMI and calculates your Ideal W
 - Male:	50.0 kg + 2.3 kg per inch over 5 feet
 - Female:	45.5 kg + 2.3 kg per inch over 5 feet
 
+## To use the Project
+- Download the source code
+- You need to have an Azure subscription to work with this code
+- Open Bot Framework Composer
+- Open the bot by navigating through files
+- You can test it in web chat or Bot framework emulator
+
+## Useful links
+- [Github Student Developer Pack][8]
+- [Azure Subscription for Students][9]
+
 [1]:https://github.com/microsoft/BotFramework-Composer/blob/main/README.md
 [2]:https://docs.microsoft.com/en-us/composer/how-to-create-custom-actions#:~:text=1%20Open%20the%20bot%20in%20Composer.%20Select%20a,to%20test%20the%20bot%20in%20Web%20Chat.%20
 [3]:https://github.com/microsoft/BotFramework-Emulator
@@ -28,3 +39,5 @@ A chatbot which gives you diet plans, calculates BMI and calculates your Ideal W
 [5]:https://github.com/Aksky16/Diet_Bot/tree/master/BMI
 [6]:https://github.com/Aksky16/Diet_Bot/tree/master/IWF
 [7]:https://github.com/Aksky16/Diet_Bot/tree/master/IWM
+[8]:https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/use-github-for-your-schoolwork/apply-for-a-student-developer-pack
+[9]:https://azure.microsoft.com/en-in/free/students/
