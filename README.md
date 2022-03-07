@@ -35,7 +35,7 @@ A chatbot which gives you diet plans, calculates BMI and calculates your Ideal W
 [1]:https://github.com/microsoft/BotFramework-Composer/blob/main/README.md
 [2]:https://docs.microsoft.com/en-us/composer/how-to-create-custom-actions#:~:text=1%20Open%20the%20bot%20in%20Composer.%20Select%20a,to%20test%20the%20bot%20in%20Web%20Chat.%20
 [3]:https://github.com/microsoft/BotFramework-Emulator
-[4]:https://webchat.botframework.com/embed/DietBot6/gemini?b=DietBot6&s=M_vWoWl7tdM.je4pIAHj6P7YRFvx1D65pyrpVjKKdhS0Ohgd6xm91-4&username=You
+[4]:https://nice-ocean-089a14210.1.azurestaticapps.net/
 [5]:https://github.com/Aksky16/Diet_Bot/tree/master/BMI
 [6]:https://github.com/Aksky16/Diet_Bot/tree/master/IWF
 [7]:https://github.com/Aksky16/Diet_Bot/tree/master/IWM
